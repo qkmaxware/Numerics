@@ -1,10 +1,13 @@
+# Ignore C# stuff
 bin/
 obj/
 TestResults/
 
+# Stuff for generating mkdocs/doxygen
 doxygen/
 docs/doxygen/*
 !docs/doxygen/.gitkeep
 !docs/doxygen/.pages
 
+# Ignore future stuff
 Numerics/src/Cas/

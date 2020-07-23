@@ -1,4 +1,4 @@
-# References
+# Resources
 
 > Richard L. Burden, J. Douglas Faires (2011).
     Numerical Analysis Ninth Edition.

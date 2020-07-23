@@ -16,6 +16,8 @@ The library is available as a NuGet package for any .Net implementation that sup
 - [MkDocs](https://www.mkdocs.org/)
   - [markdown-katex](https://gitlab.com/mbarkhau/markdown-katex)
   - [Chart.js](https://www.chartjs.org/)
+  - [Doxygen](https://www.doxygen.nl/index.html)
+  - [doxybook](https://pypi.org/project/doxybook/)
   
 ## License
 See [License](LICENSE.md) for license details.
