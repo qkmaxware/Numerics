@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="http://qkmaxware.github.io/Numerics/doxygen/class_qkmaxware_1_1_numerics_1_1_int_calculator/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Class Qkmaxware::Numerics::IntCalculator - Qkmaxware.Numerics</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Class Qkmaxware::Numerics::IntCalculator";
+    var mkdocs_page_input_path = "doxygen/class_qkmaxware_1_1_numerics_1_1_int_calculator.md";
+    var mkdocs_page_url = "/Numerics/doxygen/class_qkmaxware_1_1_numerics_1_1_int_calculator/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Qkmaxware.Numerics</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installing/">Installation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Arithmetic</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../arithmetic/calculators/">Calculators</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../arithmetic/function/">Functions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Calculus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/derivatives/">Differentiation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/differentials/">Differential Equations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/integration/">Integration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Doxygen</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../_adaptive_quadrature_integrator_8cs/">File AdaptiveQuadratureIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_adaptive_quadrature_integrator_8cs_source/">File AdaptiveQuadratureIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_base_interpolated_function_8cs/">File BaseInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_base_interpolated_function_8cs_source/">File BaseInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_complex_extensions_8cs/">File ComplexExtensions.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_complex_extensions_8cs_source/">File ComplexExtensions.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cosine_interpolation_8cs/">File CosineInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cosine_interpolation_8cs_source/">File CosineInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cubic_interpolation_8cs/">File CubicInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cubic_interpolation_8cs_source/">File CubicInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_dimension_mismatch_exception_8cs/">File DimensionMismatchException.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_dimension_mismatch_exception_8cs_source/">File DimensionMismatchException.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_euler_ivp_solver_8cs/">File EulerIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_euler_ivp_solver_8cs_source/">File EulerIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_five_point_differentiator_8cs/">File FivePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_five_point_differentiator_8cs_source/">File FivePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculation_helper_8cs/">File ICalculationHelper.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculation_helper_8cs_source/">File ICalculationHelper.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculator_8cs/">File ICalculator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculator_8cs_source/">File ICalculator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_definite_integrator_8cs/">File IDefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_definite_integrator_8cs_source/">File IDefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_function_8cs/">File IFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_function_8cs_source/">File IFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_indefinite_integrator_8cs/">File IIndefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_indefinite_integrator_8cs_source/">File IIndefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolated_function_8cs/">File IInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolated_function_8cs_source/">File IInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolator_8cs/">File IInterpolator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolator_8cs_source/">File IInterpolator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_ivp_solver_8cs/">File IIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_ivp_solver_8cs_source/">File IIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_numeric_differentiator_8cs/">File INumericDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_numeric_differentiator_8cs_source/">File INumericDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_l_u_p_set_8cs/">File LUPSet.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_l_u_p_set_8cs_source/">File LUPSet.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_linear_interpolation_8cs/">File LinearInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_linear_interpolation_8cs_source/">File LinearInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrices_8cs/">File Matrices.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrices_8cs_source/">File Matrices.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrix_8cs/">File Matrix.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrix_8cs_source/">File Matrix.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_point2_8cs/">File Point2.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_point2_8cs_source/">File Point2.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_range_8cs/">File Range.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_range_8cs_source/">File Range.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_runge_kutta_ivp_solver_8cs/">File RungeKuttaIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_runge_kutta_ivp_solver_8cs_source/">File RungeKuttaIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_simpson_integrator_8cs/">File SimpsonIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_simpson_integrator_8cs_source/">File SimpsonIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_smoothstep_interpolation_8cs/">File SmoothstepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_smoothstep_interpolation_8cs_source/">File SmoothstepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_step_interpolation_8cs/">File StepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_step_interpolation_8cs_source/">File StepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_three_point_differentiator_8cs/">File ThreePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_three_point_differentiator_8cs_source/">File ThreePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_trapezoidal_integrator_8cs/">File TrapezoidalIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_trapezoidal_integrator_8cs_source/">File TrapezoidalIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_value_generator_8cs/">File ValueGenerator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_value_generator_8cs_source/">File ValueGenerator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../annotated/">Class List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_enums/">Class Member Enums</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_functions/">Class Member Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_typedefs/">Class Member Typedefs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_variables/">Class Member Variables</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_members/">Class Members</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_base_adaptive_quadrature_integrator/">Class Qkmaxware::Numerics::BaseAdaptiveQuadratureIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_base_interpolated_function/">Class Qkmaxware::Numerics::BaseInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_centred_five_point_differentiator/">Class Qkmaxware::Numerics::CentredFivePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_centred_three_point_differentiator/">Class Qkmaxware::Numerics::CentredThreePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_calculator/">Class Qkmaxware::Numerics::ComplexCalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_extensions/">Class Qkmaxware::Numerics::ComplexExtensions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_function/">Class Qkmaxware::Numerics::ComplexFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_matrix/">Class Qkmaxware::Numerics::ComplexMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_cosine_interpolation/">Class Qkmaxware::Numerics::CosineInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_cubic_interpolation/">Class Qkmaxware::Numerics::CubicInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_dimension_mismatch_exception/">Class Qkmaxware::Numerics::DimensionMismatchException</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_calculator/">Class Qkmaxware::Numerics::DoubleCalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_function/">Class Qkmaxware::Numerics::DoubleFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_function2/">Class Qkmaxware::Numerics::DoubleFunction2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_interpolated_function/">Class Qkmaxware::Numerics::DoubleInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_matrix/">Class Qkmaxware::Numerics::DoubleMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_range/">Class Qkmaxware::Numerics::DoubleRange</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_endpoint_five_point_differentiator/">Class Qkmaxware::Numerics::EndpointFivePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_endpoint_three_point_differentiator/">Class Qkmaxware::Numerics::EndpointThreePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_euler_ivp_solver/">Class Qkmaxware::Numerics::EulerIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Class Qkmaxware::Numerics::IntCalculator</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#public-static-attributes">Public Static Attributes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#public-functions">Public Functions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#public-functions-inherited-from-qkmaxwarenumericsicalculator">Public Functions inherited from Qkmaxware::Numerics::ICalculator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#public-static-attributes-documentation">Public Static Attributes Documentation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#variable-instance">variable Instance</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#public-functions-documentation">Public Functions Documentation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#function-add">function Add</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-compare">function Compare</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-divide">function Divide</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-multiply">function Multiply</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-negate">function Negate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-subtract">function Subtract</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-unit">function Unit</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_function/">Class Qkmaxware::Numerics::IntFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_matrix/">Class Qkmaxware::Numerics::IntMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_range/">Class Qkmaxware::Numerics::IntRange</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_linear_interpolation/">Class Qkmaxware::Numerics::LinearInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_matrix/">Class Qkmaxware::Numerics::Matrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_point2/">Class Qkmaxware::Numerics::Point2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_range/">Class Qkmaxware::Numerics::Range</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_runge_kutta_ivp_solver/">Class Qkmaxware::Numerics::RungeKuttaIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_simpson_adaptive_quadrature_integrator/">Class Qkmaxware::Numerics::SimpsonAdaptiveQuadratureIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_simpson_integrator/">Class Qkmaxware::Numerics::SimpsonIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_smoothstep_interpolation/">Class Qkmaxware::Numerics::SmoothstepInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_step_interpolation/">Class Qkmaxware::Numerics::StepInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_trapezoidal_integrator/">Class Qkmaxware::Numerics::TrapezoidalIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../classes/">Class Index</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_22d954cd03c3057b6fcf702b65820bfa/">Dir Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_346f5d492aec4cbc9196864728c1e481/">Dir Numerics/src/Complex Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_5a02e572439f8185abcecbffcb6659b1/">Dir Numerics/src/Ode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_78be539330a233a7472222feabba9761/">Dir Numerics/src</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_7ecba1fdf38fbccf53114095da4cf61d/">Dir Numerics/src/Differentiation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_aa63e1a5f0911dba6fa28028dbe8a4b8/">Dir Numerics/src/Linear Algebra</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_b65ddcb4fd3ec0555cfb56205497cd41/">Dir Numerics/src/Function</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_ffa8a673d7cb9b06da78582db1cc7252/">Dir Numerics/src/Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../files/">File List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../functions/">Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../hierarchy/">Class Hierarchy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_calculation_helper/">Interface Qkmaxware::Numerics::ICalculationHelper</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/">Interface Qkmaxware::Numerics::ICalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_definite_integrator/">Interface Qkmaxware::Numerics::IDefiniteIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function/">Interface Qkmaxware::Numerics::IFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function2/">Interface Qkmaxware::Numerics::IFunction2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function3/">Interface Qkmaxware::Numerics::IFunction3</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function4/">Interface Qkmaxware::Numerics::IFunction4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_indefinite_integrator/">Interface Qkmaxware::Numerics::IIndefiniteIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_interpolated_function/">Interface Qkmaxware::Numerics::IInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_interpolator/">Interface Qkmaxware::Numerics::IInterpolator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_ivp_solver/">Interface Qkmaxware::Numerics::IIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_numeric_differentiator/">Interface Qkmaxware::Numerics::INumericDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_value_generator/">Interface Qkmaxware::Numerics::IValueGenerator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../macros/">Macros</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modules/">Modules</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_enums/">Namespace Member Enums</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_functions/">Namespace Member Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_typedefs/">Namespace Member Typedefs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_variables/">Namespace Member Variables</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_members/">Namespace Members</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_qkmaxware/">Namespace Qkmaxware</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_qkmaxware_1_1_numerics/">Namespace Qkmaxware::Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system/">Namespace System</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_collections_1_1_generic/">Namespace System::Collections::Generic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_linq/">Namespace System::Linq</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_numerics/">Namespace System::Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_text/">Namespace System::Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespaces/">Namespace List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pages/">Related Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../struct_qkmaxware_1_1_numerics_1_1_l_u_p_set/">Struct Qkmaxware::Numerics::LUPSet</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../variables/">Variables</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Linear algebra</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../linear%20algebra/matrices/">Matrices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../linear%20algebra/vectors/">Vectors</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/api/">API</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/resources/">Resources</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Qkmaxware.Numerics</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Doxygen &raquo;</li>
+        
+      
+    
+    <li>Class Qkmaxware::Numerics::IntCalculator</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/qkmaxware/Numerics/edit/master/docs/doxygen/class_qkmaxware_1_1_numerics_1_1_int_calculator.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="class-qkmaxwarenumericsintcalculator">Class Qkmaxware::Numerics::IntCalculator</h1>
+<p><a href="../annotated/"><strong>Class List</strong></a> <strong>&gt;</strong> <a href="../namespace_qkmaxware/"><strong>Qkmaxware</strong></a> <strong>&gt;</strong> <a href="../namespace_qkmaxware_1_1_numerics/"><strong>Numerics</strong></a> <strong>&gt;</strong> <a href="./"><strong>IntCalculator</strong></a></p>
+<p><em>Calculator for integer arithmetic</em> </p>
+<p>Inherits the following classes: <a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/">Qkmaxware::Numerics::ICalculator</a></p>
+<h2 id="public-static-attributes">Public Static Attributes</h2>
+<table>
+<thead>
+<tr>
+<th align="right">Type</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">readonly <a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/"><strong>ICalculator</strong></a>&lt; int &gt;</td>
+<td align="left"><a href="./#variable-instance"><strong>Instance</strong></a>   = = new <a href="./"><strong>IntCalculator</strong></a>()<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th align="right">Type</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-add"><strong>Add</strong></a> (int v1, int v2) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-compare"><strong>Compare</strong></a> (int v1, int v2) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-divide"><strong>Divide</strong></a> (int v1, int v2) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-multiply"><strong>Multiply</strong></a> (int v1, int v2) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-negate"><strong>Negate</strong></a> (int v1) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-subtract"><strong>Subtract</strong></a> (int v1, int v2) <br></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="./#function-unit"><strong>Unit</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-qkmaxwarenumericsicalculator">Public Functions inherited from Qkmaxware::Numerics::ICalculator</h2>
+<p>See <a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/">Qkmaxware::Numerics::ICalculator</a></p>
+<table>
+<thead>
+<tr>
+<th align="right">Type</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-add"><strong>Add</strong></a> (T v1, T v2) <br><em>Add two values</em></td>
+</tr>
+<tr>
+<td align="right">int</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-compare"><strong>Compare</strong></a> (T v1, T v2) <br><em>Compare two values</em></td>
+</tr>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-divide"><strong>Divide</strong></a> (T v1, T v2) <br><em>Multiply two values</em></td>
+</tr>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-multiply"><strong>Multiply</strong></a> (T v1, T v2) <br><em>Multiply two values</em></td>
+</tr>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-negate"><strong>Negate</strong></a> (T v1) <br><em>Negate a value</em></td>
+</tr>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-subtract"><strong>Subtract</strong></a> (T v1, T v2) <br><em>Subtract from a value</em></td>
+</tr>
+<tr>
+<td align="right">T</td>
+<td align="left"><a href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/#function-unit"><strong>Unit</strong></a> () <br><em>Get the '1' value for the given type</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
+<h3 id="variable-instance">variable Instance</h3>
+<pre><code class="cpp">readonly ICalculator&lt;int&gt; Qkmaxware.Numerics.IntCalculator.Instance;
+</code></pre>
+
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-add">function Add</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Add (
+    int v1,
+    int v2
+) 
+</code></pre>
+
+<h3 id="function-compare">function Compare</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Compare (
+    int v1,
+    int v2
+) 
+</code></pre>
+
+<h3 id="function-divide">function Divide</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Divide (
+    int v1,
+    int v2
+) 
+</code></pre>
+
+<h3 id="function-multiply">function Multiply</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Multiply (
+    int v1,
+    int v2
+) 
+</code></pre>
+
+<h3 id="function-negate">function Negate</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Negate (
+    int v1
+) 
+</code></pre>
+
+<h3 id="function-subtract">function Subtract</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Subtract (
+    int v1,
+    int v2
+) 
+</code></pre>
+
+<h3 id="function-unit">function Unit</h3>
+<pre><code class="cpp">int Qkmaxware::Numerics::IntCalculator::Unit () 
+</code></pre>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>Numerics/src/ICalculator.cs</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../class_qkmaxware_1_1_numerics_1_1_int_function/" class="btn btn-neutral float-right" title="Class Qkmaxware::Numerics::IntFunction">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../class_qkmaxware_1_1_numerics_1_1_euler_ivp_solver/" class="btn btn-neutral" title="Class Qkmaxware::Numerics::EulerIvpSolver"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/qkmaxware/Numerics/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../class_qkmaxware_1_1_numerics_1_1_euler_ivp_solver/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../class_qkmaxware_1_1_numerics_1_1_int_function/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

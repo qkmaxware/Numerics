@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="http://qkmaxware.github.io/Numerics/doxygen/_matrix_8cs_source/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>File Matrix.cs - Qkmaxware.Numerics</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "File Matrix.cs";
+    var mkdocs_page_input_path = "doxygen/_matrix_8cs_source.md";
+    var mkdocs_page_url = "/Numerics/doxygen/_matrix_8cs_source/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Qkmaxware.Numerics</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installing/">Installation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Arithmetic</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../arithmetic/calculators/">Calculators</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../arithmetic/function/">Functions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Calculus</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/derivatives/">Differentiation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/differentials/">Differential Equations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../calculus/integration/">Integration</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Doxygen</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../_adaptive_quadrature_integrator_8cs/">File AdaptiveQuadratureIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_adaptive_quadrature_integrator_8cs_source/">File AdaptiveQuadratureIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_base_interpolated_function_8cs/">File BaseInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_base_interpolated_function_8cs_source/">File BaseInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_complex_extensions_8cs/">File ComplexExtensions.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_complex_extensions_8cs_source/">File ComplexExtensions.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cosine_interpolation_8cs/">File CosineInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cosine_interpolation_8cs_source/">File CosineInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cubic_interpolation_8cs/">File CubicInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_cubic_interpolation_8cs_source/">File CubicInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_dimension_mismatch_exception_8cs/">File DimensionMismatchException.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_dimension_mismatch_exception_8cs_source/">File DimensionMismatchException.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_euler_ivp_solver_8cs/">File EulerIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_euler_ivp_solver_8cs_source/">File EulerIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_five_point_differentiator_8cs/">File FivePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_five_point_differentiator_8cs_source/">File FivePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculation_helper_8cs/">File ICalculationHelper.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculation_helper_8cs_source/">File ICalculationHelper.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculator_8cs/">File ICalculator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_calculator_8cs_source/">File ICalculator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_definite_integrator_8cs/">File IDefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_definite_integrator_8cs_source/">File IDefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_function_8cs/">File IFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_function_8cs_source/">File IFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_indefinite_integrator_8cs/">File IIndefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_indefinite_integrator_8cs_source/">File IIndefiniteIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolated_function_8cs/">File IInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolated_function_8cs_source/">File IInterpolatedFunction.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolator_8cs/">File IInterpolator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_interpolator_8cs_source/">File IInterpolator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_ivp_solver_8cs/">File IIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_ivp_solver_8cs_source/">File IIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_numeric_differentiator_8cs/">File INumericDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_i_numeric_differentiator_8cs_source/">File INumericDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_l_u_p_set_8cs/">File LUPSet.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_l_u_p_set_8cs_source/">File LUPSet.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_linear_interpolation_8cs/">File LinearInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_linear_interpolation_8cs_source/">File LinearInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrices_8cs/">File Matrices.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrices_8cs_source/">File Matrices.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_matrix_8cs/">File Matrix.cs</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">File Matrix.cs</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_point2_8cs/">File Point2.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_point2_8cs_source/">File Point2.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_range_8cs/">File Range.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_range_8cs_source/">File Range.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_runge_kutta_ivp_solver_8cs/">File RungeKuttaIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_runge_kutta_ivp_solver_8cs_source/">File RungeKuttaIvpSolver.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_simpson_integrator_8cs/">File SimpsonIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_simpson_integrator_8cs_source/">File SimpsonIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_smoothstep_interpolation_8cs/">File SmoothstepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_smoothstep_interpolation_8cs_source/">File SmoothstepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_step_interpolation_8cs/">File StepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_step_interpolation_8cs_source/">File StepInterpolation.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_three_point_differentiator_8cs/">File ThreePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_three_point_differentiator_8cs_source/">File ThreePointDifferentiator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_trapezoidal_integrator_8cs/">File TrapezoidalIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_trapezoidal_integrator_8cs_source/">File TrapezoidalIntegrator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_value_generator_8cs/">File ValueGenerator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../_value_generator_8cs_source/">File ValueGenerator.cs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../annotated/">Class List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_enums/">Class Member Enums</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_functions/">Class Member Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_typedefs/">Class Member Typedefs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_member_variables/">Class Member Variables</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_members/">Class Members</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_base_adaptive_quadrature_integrator/">Class Qkmaxware::Numerics::BaseAdaptiveQuadratureIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_base_interpolated_function/">Class Qkmaxware::Numerics::BaseInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_centred_five_point_differentiator/">Class Qkmaxware::Numerics::CentredFivePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_centred_three_point_differentiator/">Class Qkmaxware::Numerics::CentredThreePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_calculator/">Class Qkmaxware::Numerics::ComplexCalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_extensions/">Class Qkmaxware::Numerics::ComplexExtensions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_function/">Class Qkmaxware::Numerics::ComplexFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_complex_matrix/">Class Qkmaxware::Numerics::ComplexMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_cosine_interpolation/">Class Qkmaxware::Numerics::CosineInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_cubic_interpolation/">Class Qkmaxware::Numerics::CubicInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_dimension_mismatch_exception/">Class Qkmaxware::Numerics::DimensionMismatchException</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_calculator/">Class Qkmaxware::Numerics::DoubleCalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_function/">Class Qkmaxware::Numerics::DoubleFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_function2/">Class Qkmaxware::Numerics::DoubleFunction2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_interpolated_function/">Class Qkmaxware::Numerics::DoubleInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_matrix/">Class Qkmaxware::Numerics::DoubleMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_double_range/">Class Qkmaxware::Numerics::DoubleRange</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_endpoint_five_point_differentiator/">Class Qkmaxware::Numerics::EndpointFivePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_endpoint_three_point_differentiator/">Class Qkmaxware::Numerics::EndpointThreePointDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_euler_ivp_solver/">Class Qkmaxware::Numerics::EulerIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_calculator/">Class Qkmaxware::Numerics::IntCalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_function/">Class Qkmaxware::Numerics::IntFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_matrix/">Class Qkmaxware::Numerics::IntMatrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_int_range/">Class Qkmaxware::Numerics::IntRange</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_linear_interpolation/">Class Qkmaxware::Numerics::LinearInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_matrix/">Class Qkmaxware::Numerics::Matrix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_point2/">Class Qkmaxware::Numerics::Point2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_range/">Class Qkmaxware::Numerics::Range</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_runge_kutta_ivp_solver/">Class Qkmaxware::Numerics::RungeKuttaIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_simpson_adaptive_quadrature_integrator/">Class Qkmaxware::Numerics::SimpsonAdaptiveQuadratureIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_simpson_integrator/">Class Qkmaxware::Numerics::SimpsonIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_smoothstep_interpolation/">Class Qkmaxware::Numerics::SmoothstepInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_step_interpolation/">Class Qkmaxware::Numerics::StepInterpolation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../class_qkmaxware_1_1_numerics_1_1_trapezoidal_integrator/">Class Qkmaxware::Numerics::TrapezoidalIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../classes/">Class Index</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_22d954cd03c3057b6fcf702b65820bfa/">Dir Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_346f5d492aec4cbc9196864728c1e481/">Dir Numerics/src/Complex Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_5a02e572439f8185abcecbffcb6659b1/">Dir Numerics/src/Ode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_78be539330a233a7472222feabba9761/">Dir Numerics/src</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_7ecba1fdf38fbccf53114095da4cf61d/">Dir Numerics/src/Differentiation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_aa63e1a5f0911dba6fa28028dbe8a4b8/">Dir Numerics/src/Linear Algebra</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_b65ddcb4fd3ec0555cfb56205497cd41/">Dir Numerics/src/Function</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dir_ffa8a673d7cb9b06da78582db1cc7252/">Dir Numerics/src/Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../files/">File List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../functions/">Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../hierarchy/">Class Hierarchy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_calculation_helper/">Interface Qkmaxware::Numerics::ICalculationHelper</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_calculator/">Interface Qkmaxware::Numerics::ICalculator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_definite_integrator/">Interface Qkmaxware::Numerics::IDefiniteIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function/">Interface Qkmaxware::Numerics::IFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function2/">Interface Qkmaxware::Numerics::IFunction2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function3/">Interface Qkmaxware::Numerics::IFunction3</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_function4/">Interface Qkmaxware::Numerics::IFunction4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_indefinite_integrator/">Interface Qkmaxware::Numerics::IIndefiniteIntegrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_interpolated_function/">Interface Qkmaxware::Numerics::IInterpolatedFunction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_interpolator/">Interface Qkmaxware::Numerics::IInterpolator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_ivp_solver/">Interface Qkmaxware::Numerics::IIvpSolver</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_numeric_differentiator/">Interface Qkmaxware::Numerics::INumericDifferentiator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface_qkmaxware_1_1_numerics_1_1_i_value_generator/">Interface Qkmaxware::Numerics::IValueGenerator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../macros/">Macros</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modules/">Modules</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_enums/">Namespace Member Enums</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_functions/">Namespace Member Functions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_typedefs/">Namespace Member Typedefs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_member_variables/">Namespace Member Variables</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_members/">Namespace Members</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_qkmaxware/">Namespace Qkmaxware</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_qkmaxware_1_1_numerics/">Namespace Qkmaxware::Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system/">Namespace System</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_collections_1_1_generic/">Namespace System::Collections::Generic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_linq/">Namespace System::Linq</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_numerics/">Namespace System::Numerics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespace_system_1_1_text/">Namespace System::Text</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../namespaces/">Namespace List</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pages/">Related Pages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../struct_qkmaxware_1_1_numerics_1_1_l_u_p_set/">Struct Qkmaxware::Numerics::LUPSet</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../variables/">Variables</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Linear algebra</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../linear%20algebra/matrices/">Matrices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../linear%20algebra/vectors/">Vectors</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/api/">API</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/resources/">Resources</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Qkmaxware.Numerics</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Doxygen &raquo;</li>
+        
+      
+    
+    <li>File Matrix.cs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/qkmaxware/Numerics/edit/master/docs/doxygen/_matrix_8cs_source.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="file-matrixcs">File Matrix.cs</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_aa63e1a5f0911dba6fa28028dbe8a4b8/"><strong>Linear Algebra</strong></a> <strong>&gt;</strong> <a href="../_matrix_8cs/"><strong>Matrix.cs</strong></a></p>
+<p><a href="../_matrix_8cs/">Go to the documentation of this file.</a> </p>
+<pre><code class="cpp">using System;
+using System.Text;
+
+namespace Qkmaxware.Numerics {
+
+public class Matrix&lt;T&gt; : ICalculationHelper&lt;T&gt; {
+
+    private T[,] elements;
+    public ICalculator&lt;T&gt; Calculator {get; private set;}
+    public int Elements =&gt; elements.Length;
+    public int Rows =&gt; elements.GetLength(0);
+    public int Columns =&gt; elements.GetLength(1);
+    public T this [int row, int column] =&gt; elements[row, column];
+    public Matrix&lt;T&gt; this [int row, Range columns] =&gt; this[new Range(new Index(row), new Index(row + 1)), columns];
+    public Matrix&lt;T&gt; this [Range rows, int column] =&gt; this[rows, new Range(new Index(column), new Index(column + 1))];
+    public Matrix&lt;T&gt; this [Range rows, Range columns] {
+        get {
+            var rStart = rows.Start.GetOffset(this.Rows);
+            var rEnd = rows.End.GetOffset(this.Rows);
+            var cStart = columns.Start.GetOffset(this.Columns);
+            var cEnd = columns.End.GetOffset(this.Columns);
+
+            var rowCount = Math.Abs(rEnd - rStart);
+            var columnCount = Math.Abs(cEnd - cStart);
+            var rowStep = rEnd - rStart &lt; 0 ? -1 : 1;
+            var columnStep = cEnd - cStart &lt; 0 ? -1 : 1;
+
+            if (rowCount &lt;= 0 || columnCount &lt;= 0)
+                return new Matrix&lt;T&gt;(this.Calculator, 0, 0);
+
+            var mx = new Matrix&lt;T&gt;(this.Calculator, rowCount, columnCount);
+            var oldRow = rStart;
+            var newRow = 0;
+            while (oldRow != rEnd) {
+                var oldCol = cStart;
+                var newCol = 0;
+                while (oldCol != cEnd) {
+                    mx.elements[newRow, newCol] = this[oldRow, oldCol];
+
+                    oldCol += columnStep;
+                    newCol++;
+                }
+                oldRow += rowStep;
+                newRow++;
+            }
+
+            return mx;
+        }
+    }
+
+    public bool IsSquare =&gt; Rows == Columns;
+    public bool IsRowMatrix =&gt; Rows == 1;
+    public bool IsColumnMatrix =&gt; Columns == 1;
+    public Matrix(ICalculator&lt;T&gt; calculator, int rows, int columns) {
+        this.Calculator = calculator;
+        this.elements = new T[rows, columns];
+    }
+    public Matrix(ICalculator&lt;T&gt; calculator, T[,] elements) {
+        this.Calculator = calculator;
+        this.elements = elements;
+    }
+
+    // FILLS -----------------------------------------------------------------------------
+    #region Fills
+    public static Matrix&lt;T&gt; Fill(ICalculator&lt;T&gt; calc, int rows, int columns, T value) {
+        var ts = new T[rows, columns];
+        for (var row = 0; row &lt; ts.GetLength(0); row++) {
+            for (var col = 0; col &lt; ts.GetLength(1); col++) {
+                ts[row, col] = value;
+            }
+        }
+        return new Matrix&lt;T&gt;(calc, ts);
+    }
+    public static Matrix&lt;T&gt; Identity(ICalculator&lt;T&gt; calc, int rows, int columns) {
+        var ts = new T[rows, columns];
+        for (var i = 0; i &lt; ts.GetLength(1); i++) {
+            ts[i,i] = calc.Unit();
+        }
+        return new Matrix&lt;T&gt;(calc, ts);
+    }
+
+    public static Matrix&lt;T&gt; Random(ICalculator&lt;T&gt; calc, int rows, int columns, IValueGenerator&lt;T&gt; rng) {
+        var ts = new T[rows, columns];
+        for (var row = 0; row &lt; ts.GetLength(0); row++) {
+            for (var col = 0; col &lt; ts.GetLength(1); col++) {
+                ts[row, col] = rng.Next();
+            }
+        }
+        return new Matrix&lt;T&gt;(calc, ts);
+    }
+
+    #endregion
+
+    // MATRIX ASSERTIONS -----------------------------------------------------------------
+    #region Assertions
+    public static void AssertSquare(Matrix&lt;T&gt; mtx) {
+        if(!mtx.IsSquare) {
+            throw new DimensionMismatchException();
+        }
+    }
+
+    public static void AssertSameDimensions(Matrix&lt;T&gt; m1, Matrix&lt;T&gt; m2) {
+        if(m1.Rows != m2.Rows || m1.Columns != m2.Columns) {
+            throw new DimensionMismatchException();
+        }
+    }
+
+    public static void AssertCanMultiply(Matrix&lt;T&gt; m1, Matrix&lt;T&gt; m2) {
+        if(m1.Columns != m2.Rows) {
+            throw new DimensionMismatchException();
+        }
+    }
+
+    public static void AssertValidColumn(Matrix&lt;T&gt; m1, int column) {
+        if(m1.Columns &lt; column) {
+            throw new IndexOutOfRangeException();
+        }
+    }
+
+    public static void AssertValidRow(Matrix&lt;T&gt; m1, int row) {
+        if(m1.Rows &lt; row) {
+            throw new IndexOutOfRangeException();
+        }
+    }
+
+    protected static void AssertValidColumn(T[,] m1, int column) {
+        if(m1.GetLength(1) &lt; column) {
+            throw new IndexOutOfRangeException();
+        }
+    }
+
+    protected static void AssertValidRow(T[,] m1, int row) {
+        if(m1.GetLength(0) &lt; row) {
+            throw new IndexOutOfRangeException();
+        }
+    }
+    #endregion
+
+    // OTHER OPERATIONS -----------------------------------------------------------------
+    public Matrix&lt;T&gt; Map (Func&lt;T, T&gt; op) {
+        var rs = new T[this.Rows, this.Columns];
+        for (var row = 0; row &lt; this.Rows; row++) {
+            for (var col = 0; col &lt; this.Columns; col++) {
+                rs[row, col] = op(this[row, col]);
+            }
+        }
+        return new Matrix&lt;T&gt;(this.Calculator, rs);
+    }
+    public Matrix&lt;K&gt; Map&lt;K&gt; (ICalculator&lt;K&gt; calculator, Func&lt;T, K&gt; convert) {
+        var rs = new K[this.Rows, this.Columns];
+        for (var row = 0; row &lt; this.Rows; row++) {
+            for (var col = 0; col &lt; this.Columns; col++) {
+                rs[row, col] = convert(this[row, col]);
+            }
+        }
+        return new Matrix&lt;K&gt;(calculator, rs);
+    }
+    public T Trace () {
+        AssertSquare(this);
+
+        #nullable disable
+        T value = default(T);
+        for(int i = 0; i &lt; this.Rows; i++) {
+            if(i == 0) {
+                value = this[i,i];
+            } else {
+                value = Calculator.Add(value, this[i,i]);
+            }
+        }
+        return value;
+        #nullable restore
+    }
+    public Matrix&lt;T&gt; Transpose () {
+        T[,] res = new T[this.Columns, this.Rows];
+        for (int i = 0; i &lt; this.Rows; i++)
+            for (int j = 0; j &lt; this.Columns; j++)
+                res[j,i] = this[i,j];
+
+        return new Matrix&lt;T&gt;(this.Calculator, res);
+    }
+
+    private void SwapRows(T[,] values, int r1, int r2) {
+        AssertValidRow(values, r1);
+        AssertValidRow(values, r2);
+        T temp;
+        for(int i = 0; i &lt; this.Columns; i++) {
+            temp = values[r1, i];
+            values[r1,i] = values[r2,i];
+            values[r2,i] = temp;
+        }
+    }
+
+    private T[,] Pivot(out uint exchanges) {
+        // Only square matrices
+        AssertSquare(this);
+
+        // Prepare inputs
+        int n = this.Rows; // Rows and columns are the same
+        T[,] im = new T[n,n];
+        for (var i = 0; i &lt; n; i++) {
+            im[i,i] = Calculator.Unit(); // Make into the identity matrix
+        }
+        exchanges = 0;
+
+        // Run
+        for (var j = 0; j &lt; n; j++) {
+            T max = this[j, j];
+            int row = j;
+            for (var i = row; i &lt; n; i++) {
+                if (Calculator.Compare(this[i,j], max) &gt; 0) {
+                    max = this[i, j];
+                    row = i;
+                }
+            }
+            if (j != row) {
+                // Swap rows
+                exchanges++;
+                SwapRows(im, j, row);
+            }
+        }
+
+        // Done
+        return im;
+    }
+
+    public LUPSet&lt;T&gt; Decompose () {
+        // Only square matrices
+        AssertSquare(this);
+
+        // Create empty matrices
+        #nullable disable
+
+        int n = this.Rows;
+        T[,] L = new T[n,n];
+        T[,] U = new T[n,n];
+        uint pexchanges;
+        T[,] P = this.Pivot(out pexchanges);
+        Matrix&lt;T&gt; A2 = new Matrix&lt;T&gt;(this.Calculator, P) * (this);
+
+        for (int j = 0; j &lt; n; j++) {
+            L[j,j] = Calculator.Unit();
+            for (int i = 0; i &lt; j +1; i++) {
+                T s1 = default(T);
+                for (int k = 0; k &lt; i; k++) {
+                    s1 = Calculator.Add(
+                        s1,
+                        Calculator.Multiply(U[k,j], L[i,k])
+                    );
+                }
+                U[i,j] = Calculator.Subtract(A2[i,j], s1);
+            }
+            for (int i = j; i &lt; n; i++) {
+                T s2 = default(T);
+                for (int k = 0; k &lt; j; k++) {
+                    s2 = Calculator.Add(
+                        s2,
+                        Calculator.Multiply(U[k,j], L[i,k])
+                    );
+                }
+                L[i,j] = Calculator.Divide(
+                    Calculator.Subtract(A2[i,j], s2), 
+                    U[j,j]
+                );
+            }
+        }
+
+        #nullable restore
+
+        return new LUPSet&lt;T&gt;(L, U, P, pexchanges);
+    }
+
+    public T Determinant() {
+        // TODO deal with 1x1 and 2x2 matrices
+        //http://lampx.tugraz.at/~hadley/num/ch2/2.3a.php
+        // Only square matrices
+        AssertSquare(this);
+        // det(P) * det(A) = det(L) * det(U)
+        // det(A) = det(L) * det(U) / det(P)
+        // det(A) = 1 * Pi{Uii | i in 0..N} / (-1^n)
+        LUPSet&lt;T&gt; lup = this.Decompose();
+        T d = Calculator.Unit();
+
+        //Product of the diagonal elements of the LU matrix
+        for(int i = 0; i &lt; this.Rows; i++) {
+            d = Calculator.Multiply(d, lup.U[i,i]); 
+        }
+
+        // Multiply by the determinate of the P matrix (-1^n | n = number of exchanges)
+        // if n is even, -1^n = 1, if n is odd -1^n = -1
+        if (lup.Sign &gt; 0) {
+            return d;
+        } else {
+            return Calculator.Negate(d);
+        }
+    }
+
+    private Matrix&lt;T&gt; submatrix (int row, int column) {
+        AssertValidColumn(this, column);
+        AssertValidRow(this, row);
+        var newColumns = this.Columns - 1;
+        var newRows = this.Rows - 1;
+        if (newColumns &lt; 0)
+            newColumns = 0;
+        if (newRows &lt; 0)
+            newRows = 0;
+
+        var sub = new Matrix&lt;T&gt;(this.Calculator, newRows, newColumns);
+        var x = 0;
+        for (var icol = 0; icol &lt; this.Columns; icol++) {
+            if (icol == column)
+                continue;
+
+            int y = 0;
+            for (int irow = 0; irow &lt; this.Rows; irow++) {
+                if (irow == row)
+                    continue;
+
+                sub.elements[y, x] = this[irow, icol];
+                y++;
+            }
+
+            x++;
+        }
+
+        return sub;
+    }
+
+    public Matrix&lt;T&gt; Minors() {
+        var minors = new Matrix&lt;T&gt;(this.Calculator, this.Rows, this.Columns);
+
+        for (var row = 0; row &lt; this.Rows; row++) {
+            for (var col = 0; col &lt; this.Columns; col++) {
+                var submatrix = this.submatrix(row, col);
+                var det = submatrix.Determinant();
+                minors.elements[row, col] = det;
+            }
+        }
+
+        return minors;
+    }
+    public Matrix&lt;T&gt; Cofactor() {
+        Matrix&lt;T&gt; co = new Matrix&lt;T&gt;(this.Calculator, this.Columns, this.Rows);
+        var minors = Minors();
+
+        for (var row = 0; row &lt; this.Rows; row++) {
+            for (var col = 0; col &lt; this.Columns; col++) {
+                // Apply checkerboard of +/- 
+                // + - + -  // EVEN row
+                // - + - +  // ODD row
+                // + - + -
+
+                bool negate = false;
+                if (row % 2 != 0) {
+                    // ODD Row
+                    if (!(col % 2 != 0)) {
+                        // EVEN column
+                        negate = true;
+                    }
+                } else {
+                    // EVEN row
+                    if ((col % 2 != 0)) {
+                        // ODD column
+                        negate = true;
+                    }
+                }
+                co.elements[row, col] = negate ? Calculator.Negate(minors[row, col]) : minors[row, col];
+            }
+        }
+
+        return co;
+    }
+
+    public Matrix&lt;T&gt; Adjugate() {
+        return this.Cofactor().Transpose();
+    }
+
+    public Matrix&lt;T&gt; Inverse() {
+        return this.Adjugate() / this.Determinant();
+    }
+
+    public static Matrix&lt;T&gt; Operate(Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs, Func&lt;T,T,T&gt; function) {
+        AssertSameDimensions(lhs, rhs);
+        var rs = new T[lhs.Rows,lhs.Columns];
+        var calc = lhs.Calculator ?? rhs.Calculator;
+
+        for (var row = 0; row &lt; lhs.Rows; row++) {
+            for (var col = 0; col &lt; lhs.Columns; col++) {
+                rs[row, col] = function(lhs[row, col], rhs[row, col]);
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+
+    // MATRIX OPERATORS -----------------------------------------------------------------
+    #region  Operators
+    public static Matrix&lt;T&gt; operator + (Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs) {
+        AssertSameDimensions(lhs, rhs);
+        var calc = lhs.Calculator ?? rhs.Calculator;
+
+        T[,] rs = new T[lhs.Rows, lhs.Columns];
+        for(int i = 0; i &lt; lhs.Rows; i++) {
+            for(int j = 0; j &lt; lhs.Columns; j++) {
+                rs[i,j] = calc.Add(lhs[i,j], (rhs[i,j]));
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+    public static Matrix&lt;T&gt; operator - (Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs) {
+        AssertSameDimensions(lhs, rhs);
+        var calc = lhs.Calculator ?? rhs.Calculator;
+
+        T[,] rs = new T[lhs.Rows, lhs.Columns];
+        for(int i = 0; i &lt; lhs.Rows; i++) {
+            for(int j = 0; j &lt; lhs.Columns; j++) {
+                rs[i,j] = calc.Subtract(lhs[i,j], (rhs[i,j]));
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+    public static Matrix&lt;T&gt; operator / (Matrix&lt;T&gt; lhs, T rhs) {
+        var calc = lhs.Calculator;
+
+        T[,] rs = new T[lhs.Rows, lhs.Columns];
+        for(int i = 0; i &lt; lhs.Rows; i++) {
+            for(int j = 0; j &lt; lhs.Columns; j++) {
+                rs[i,j] = calc.Divide(lhs[i,j], rhs);
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+    public static Matrix&lt;T&gt; operator * (Matrix&lt;T&gt; lhs, T rhs) {
+        var calc = lhs.Calculator;
+
+        T[,] rs = new T[lhs.Rows, lhs.Columns];
+        for(int i = 0; i &lt; lhs.Rows; i++) {
+            for(int j = 0; j &lt; lhs.Columns; j++) {
+                rs[i,j] = calc.Multiply(lhs[i,j], rhs);
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+    public static Matrix&lt;T&gt; operator * (T lhs, Matrix&lt;T&gt; rhs) {
+        var calc = rhs.Calculator;
+
+        T[,] rs = new T[rhs.Rows, rhs.Columns];
+        for(int i = 0; i &lt; rhs.Rows; i++) {
+            for(int j = 0; j &lt; rhs.Columns; j++) {
+                rs[i,j] = calc.Multiply(lhs, rhs[i,j]);
+            }
+        }
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    }
+    public static Matrix&lt;T&gt; operator * (Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs) {
+        AssertCanMultiply(lhs, rhs);
+        var calc = lhs.Calculator ?? rhs.Calculator;
+
+        #nullable disable
+        int rows = lhs.Rows;
+        int columns = rhs.Columns;
+        T[,] rs = new T[rows,columns];
+        for (int i = 0; i &lt; rows; i++) {
+            for (int j = 0; j &lt; columns; j++) {
+                T sum = default(T);
+                for (int k = 0; k &lt; lhs.Columns; k++) {
+                    if (k == 0) {
+                        sum = calc.Multiply(lhs[i,k], (rhs[k,j]));
+                    } else {
+                        sum = calc.Add(
+                            sum, 
+                            calc.Multiply(lhs[i,k], (rhs[k,j]))
+                        ); 
+                    }
+                }
+                rs[i,j] = sum;
+            }
+        }
+        #nullable restore
+
+        return new Matrix&lt;T&gt;(calc, rs);
+    } 
+    #endregion
+
+    // STRING CONSTRUCTION -----------------------------------------------------------------
+    #region Stringing
+    protected enum MatrixItemPrintOrder {
+        RowWise, ColumnWise,
+    }   
+
+    public string ToWolframString(string format = &quot;{0}&quot;) {
+        return this.Format(
+            MatrixItemPrintOrder.RowWise,
+            &quot;{&quot;,
+                &quot;{&quot;,format,&quot;,&quot;, &quot;}&quot;, &quot;,&quot;,
+            &quot;}&quot;
+        );
+    }
+
+    public string ToMatlabString(string format = &quot;{0}&quot;) {
+        return this.Format(
+            MatrixItemPrintOrder.RowWise,
+            &quot;[&quot;,
+                string.Empty,format,&quot;,&quot;, string.Empty, &quot;;&quot;,
+            &quot;]&quot;
+        );
+    }
+
+    public string ToMapleString( string format = &quot;{0}&quot;) {
+        return this.Format(
+            MatrixItemPrintOrder.ColumnWise,
+            &quot;&lt;&quot;,
+                &quot;&lt;&quot;,format,&quot;,&quot;, &quot;&gt;&quot;, &quot;|&quot;,
+            &quot;&gt;&quot;
+        );
+    }
+
+    public string ToLatexString(string format = &quot;{0}&quot;) {
+        return 
+        @&quot;\begin{bmatrix}&quot; + 
+        this.Format(
+            MatrixItemPrintOrder.RowWise,
+            string.Empty,
+                string.Empty,format,&quot;&amp;&quot;, string.Empty, @&quot; \\&quot;,
+            string.Empty
+        ) + 
+        @&quot;\end{bmatrix}&quot;;
+    }
+
+    public override string ToString() {
+        return this.Format(
+            MatrixItemPrintOrder.RowWise,
+            string.Empty,
+                string.Empty,&quot;{0}&quot;,&quot; &quot;, string.Empty, System.Environment.NewLine,
+            string.Empty
+        );
+    }
+
+    private string Format(MatrixItemPrintOrder format = MatrixItemPrintOrder.RowWise, string prefix = &quot;[&quot;, string itemPrefix = &quot;&quot;, string elementFormat = &quot;{0}&quot;, string elementSeparator = &quot;,&quot;, string itemPostfix = &quot;&quot;, string itemSeparator = &quot;;&quot;, string postfix = &quot;]&quot;) {
+        StringBuilder sb = new StringBuilder();
+        sb.Append(prefix);
+        if (format == MatrixItemPrintOrder.RowWise) {
+            // Iterate over rows first
+            for(int i = 0; i &lt; this.Rows; i++){
+                if (i != 0) {
+                    sb.Append(itemSeparator);
+                }
+                sb.Append(itemPrefix);
+                for(int j = 0; j &lt; this.Columns; j++) {
+                    if (j != 0) {
+                        sb.Append(elementSeparator);
+                    }
+                    sb.Append(string.Format(elementFormat, this[i,j]));
+                }
+                sb.Append(itemPostfix);
+            }
+        } else {
+            // Iterate over columns first
+            for(int i = 0; i &lt; this.Columns; i++){
+                if (i != 0) {
+                    sb.Append(itemSeparator);
+                }
+                sb.Append(itemPrefix);
+                for(int j = 0; j &lt; this.Rows; j++) {
+                    if (j != 0) {
+                        sb.Append(elementSeparator);
+                    }
+                    sb.Append(string.Format(elementFormat, this[j,i]));
+                }
+                sb.Append(itemPostfix);
+            }
+        }
+        sb.Append(postfix);
+        return sb.ToString();
+    }
+    #endregion
+}
+
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../_point2_8cs/" class="btn btn-neutral float-right" title="File Point2.cs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../_matrix_8cs/" class="btn btn-neutral" title="File Matrix.cs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/qkmaxware/Numerics/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../_matrix_8cs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../_point2_8cs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
