@@ -16,6 +16,51 @@ public interface IFunction<T> : ICalculationHelper<T> {
 }
 
 /// <summary>
+/// Generic interface for a function with 2 parametres
+/// </summary>
+/// <typeparam name="T"></typeparam>
+public interface IFunction2<T> : ICalculationHelper<T> {
+    /// <summary>
+    /// Evaluate the function at y = f(x1, x2)
+    /// </summary>
+    /// <param name="x1">first parametre</param>
+    /// <param name="x2">second parametre</param>
+    /// <returns>y</returns>
+    T Evaluate(T x1, T x2);
+}
+
+/// <summary>
+/// Generic interface for a function with 3 parametres
+/// </summary>
+/// <typeparam name="T"></typeparam>
+public interface IFunction3<T> : ICalculationHelper<T> {
+    /// <summary>
+    /// Evaluate the function at y = f(x1, x2, x3)
+    /// </summary>
+    /// <param name="x1">first parametre</param>
+    /// <param name="x2">second parametre</param>
+    /// <param name="x3">third parametre</param>
+    /// <returns>y</returns>
+    T Evaluate(T x1, T x2, T x3);
+}
+
+/// <summary>
+/// Generic interface for a function with 4 parametres
+/// </summary>
+/// <typeparam name="T"></typeparam>
+public interface IFunction4<T> : ICalculationHelper<T> {
+    /// <summary>
+    /// Evaluate the function at y = f(x1, x2, x3, x4)
+    /// </summary>
+    /// <param name="x1">first parametre</param>
+    /// <param name="x2">second parametre</param>
+    /// <param name="x3">third parametre</param>
+    /// <param name="x4">four parametre</param>
+    /// <returns>y</returns>
+    T Evaluate(T x1, T x2, T x3, T x4);
+}
+
+/// <summary>
 /// Native integer function
 /// </summary>
 public class IntFunction : IFunction<int> {
@@ -28,10 +73,6 @@ public class IntFunction : IFunction<int> {
 
     public int Evaluate(int x) {
         return checked(Lambda(x));
-    }
-
-    public static implicit operator IntFunction(Func<int, int> fn) {
-        return new IntFunction(fn);
     }
 }
 
@@ -49,9 +90,21 @@ public class DoubleFunction : IFunction<double> {
     public double Evaluate(double x) {
         return checked(Lambda(x));
     }
+}
 
-    public static implicit operator DoubleFunction(Func<double, double> fn) {
-        return new DoubleFunction(fn);
+/// <summary>
+/// Native double function of two variables
+/// </summary>
+public class DoubleFunction2 : IFunction2<double> {
+    public ICalculator<double> Calculator => DoubleCalculator.Instance;
+    public Func<double, double, double> Lambda {get; set;}
+
+    public DoubleFunction2(Func<double, double, double> fn) {
+        this.Lambda = fn;
+    }
+
+    public double Evaluate(double x1, double x2) {
+        return checked(Lambda(x1, x2));
     }
 }
 
@@ -68,10 +121,6 @@ public class ComplexFunction : IFunction<Complex> {
 
     public Complex Evaluate(Complex x) {
         return checked(Lambda(x));
-    }
-
-    public static implicit operator ComplexFunction(Func<Complex, Complex> fn) {
-        return new ComplexFunction(fn);
     }
 }
 

@@ -140,6 +140,24 @@ namespace Testing.Numerics {
         }
 
         [TestMethod]
+        public void ElementWise() {
+            DoubleMatrix xs = new double[2,2] {
+                {1, 2},
+                {3, 4}
+            };
+            DoubleMatrix ys = new double[2,2] {
+                {9, 7},
+                {5, 3}
+            };
+            var zs = Matrix<double>.Operate(xs, ys, (x, y) => x + y);
+
+            Assert.AreEqual(10, zs[0,0]);
+            Assert.AreEqual(9, zs[0,1]);
+            Assert.AreEqual(8, zs[1,0]);
+            Assert.AreEqual(7, zs[1,1]);
+        }
+
+        [TestMethod]
         public void LUPDecompose() {
             // Test derived from
             // https://rosettacode.org/wiki/LU_decomposition#2D_representation

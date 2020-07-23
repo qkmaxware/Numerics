@@ -16,9 +16,9 @@ public abstract class BaseInterpolatedFunction<T> : IInterpolatedFunction<T> whe
 
     public ICalculator<T> Calculator {get; private set;}
 
-    public BaseInterpolatedFunction (ICalculator<T> calculator, Point2<T>[] samples) {
+    public BaseInterpolatedFunction (ICalculator<T> calculator, IEnumerable<Point2<T>> samples) {
         this.Calculator = calculator;
-        this.points = samples;
+        this.points = samples.ToArray();
         this.InterpolationMethod = new LinearInterpolation<T>(calculator);
         Array.Sort(this.points, (a, b) => a.X.CompareTo(b.X)); // sort this in terms of x
     }
@@ -118,7 +118,7 @@ public abstract class BaseInterpolatedFunction<T> : IInterpolatedFunction<T> whe
 /// Interpolated function using doubles
 /// </summary>
 public class DoubleInterpolatedFunction : BaseInterpolatedFunction<double> {
-    public DoubleInterpolatedFunction (Point2<double>[] samples) : base(DoubleCalculator.Instance, samples) {}
+    public DoubleInterpolatedFunction (IEnumerable<Point2<double>> samples) : base(DoubleCalculator.Instance, samples) {}
 
     public DoubleInterpolatedFunction(double[] xs, double[] ys) : base(DoubleCalculator.Instance, xs, ys) {}
 }

@@ -10,7 +10,7 @@ public class TestTrapezoidalIntegrator {
     [TestMethod]
     public void TestFunctionIntegration() {
         var integrator = new TrapezoidalIntegrator();
-        DoubleFunction fn = (Func<double,double>)((x) => Math.Pow(x, 2)); // real integral is ~8.7
+        DoubleFunction fn = new DoubleFunction((x) => Math.Pow(x, 2)); // real integral is ~8.7
         var area = integrator.Integrate(fn, (DoubleRange)(1..3));
 
         var trapezoid12 = 2.5;

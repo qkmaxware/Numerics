@@ -467,6 +467,27 @@ public class Matrix<T> : ICalculationHelper<T> {
         return this.Adjugate() / this.Determinant();
     }
 
+    /// <summary>
+    /// Perform element wise operations
+    /// </summary>
+    /// <param name="lhs">first matrix</param>
+    /// <param name="rhs">second matrix</param>
+    /// <param name="function">element wise operation</param>
+    /// <returns>transformed matrix</returns>
+    public static Matrix<T> Operate(Matrix<T> lhs, Matrix<T> rhs, Func<T,T,T> function) {
+        AssertSameDimensions(lhs, rhs);
+        var rs = new T[lhs.Rows,lhs.Columns];
+        var calc = lhs.Calculator ?? rhs.Calculator;
+
+        for (var row = 0; row < lhs.Rows; row++) {
+            for (var col = 0; col < lhs.Columns; col++) {
+                rs[row, col] = function(lhs[row, col], rhs[row, col]);
+            }
+        }
+
+        return new Matrix<T>(calc, rs);
+    }
+
     // MATRIX OPERATORS -----------------------------------------------------------------
     #region  Operators
     /// <summary>

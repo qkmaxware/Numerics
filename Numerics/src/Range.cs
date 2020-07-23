@@ -29,15 +29,15 @@ public class Range<T> : ICalculationHelper<T>{
     public IEnumerable<T> All {
         get {
             var current = Start;
-            bool flipComparison = Calculator.Compare(Start, End) > 0 ? false : true;
+            bool flipComparison = (Calculator.Compare(Start, End) > 0) ? true : false; // true if Start > End
 
             do {
                 yield return current;
                 current = Calculator.Add(current, Increment);
             } while (
                 !flipComparison 
-                ? Calculator.Compare(current, End) <= 0
-                : Calculator.Compare(current, End) >= 0
+                ? Calculator.Compare(current, End) <= 0 // Start < End -> current < End
+                : Calculator.Compare(current, End) >= 0 // Start > End -> current > End
             );
         }
     }

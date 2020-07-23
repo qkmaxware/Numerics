@@ -11,6 +11,9 @@ theme:
   name: readthedocs
   custom_dir: docs_theme/
 
+plugins:
+  - awesome-pages
+
 markdown_extensions:
   - markdown_katex:
       no_inline_svg: True

@@ -1,3 +1,10 @@
 bin/
 obj/
 TestResults/
+
+doxygen/
+docs/doxygen/*
+!docs/doxygen/.gitkeep
+!docs/doxygen/.pages
+
+Numerics/src/Cas/

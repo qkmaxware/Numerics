@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Testing.Numerics {
 
-public class FunctionTest {
+public class DerivativeFunctionTest {
     protected static void SaveCsv(string name, IFunction<double> approx, Func<double, double> real) {
         if (!Directory.Exists(".data"))
             Directory.CreateDirectory(".data");

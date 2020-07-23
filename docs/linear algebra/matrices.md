@@ -66,6 +66,20 @@ IntMatrix ys = new int[2,2]{
 var zs = xs * ys;
 ```
 
+## Element-wise Operations
+
+```cs
+DoubleMatrix xs = new double[2,2] {
+    {1, 2},
+    {3, 4}
+};
+DoubleMatrix ys = new double[2,2] {
+    {9, 8},
+    {7, 6}
+};
+var zs = Matrix<double>.Operate(xs, ys, (x, y) => x + y);
+```
+
 ## Trace
 
 ```cs

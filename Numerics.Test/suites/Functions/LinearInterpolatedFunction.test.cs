@@ -7,7 +7,7 @@ using System.Linq;
 namespace Testing.Numerics {
 
 [TestClass]
-public class LinearInterpolatedFunctionTest : FunctionTest{
+public class LinearInterpolatedFunctionTest : DerivativeFunctionTest{
     [TestMethod]
     public void TestFunction() {
         Func<double,double> fn = (x) => Math.Pow(x, 2); // x ^ 2
