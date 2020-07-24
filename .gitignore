@@ -4,8 +4,8 @@ obj/
 TestResults/
 
 # Stuff for generating mkdocs/doxygen
-doxygen/
-docs/doxygen/*
+/doxygen/
+docs/doxygen/*.md
 !docs/doxygen/.gitkeep
 !docs/doxygen/.pages
 
