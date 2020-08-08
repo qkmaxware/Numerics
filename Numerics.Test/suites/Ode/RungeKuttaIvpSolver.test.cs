@@ -17,7 +17,7 @@ public class RungeKuttaIvpSolverTest {
         DoubleFunction2 yP = new DoubleFunction2((t,y) => (y - t * t + 1));
 
         var solver = new RungeKuttaIvpSolver();
-        var approxy = solver.Solve(yP, t, y0);
+        var approxy = solver.SolveInitial(new FirstOrderDE<double>(yP), t, y0);
 
         SaveCsv("RungeKuttaIVP", approxy, y, t);
     }

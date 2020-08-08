@@ -1,5 +1,8 @@
 using System.Numerics;
 
+/// <summary>
+/// Root namespace for the Numerics package
+/// </summary>
 namespace Qkmaxware.Numerics {
 
 /// <summary>
@@ -74,6 +77,56 @@ public class IntCalculator : ICalculator<int> {
 
     public int Compare(int v1, int v2) => v1.CompareTo(v2);
 } 
+
+/// <summary>
+/// Calculator for unsigned integer arithmetic
+/// </summary>
+public class UintCalculator : ICalculator<uint> {
+    public static readonly ICalculator<uint> Instance = new UintCalculator();
+
+    public uint Add(uint v1, uint v2) => checked(v1 + v2);
+    public uint Subtract (uint v1, uint v2) => checked(v1 - v2);
+    public uint Multiply (uint v1, uint v2) => checked(v1 * v2);
+    public uint Divide (uint v1, uint v2) => checked(v1 / v2);
+    public uint Negate (uint v1) => checked((uint)-v1);
+    public uint Unit() => 1;
+
+    public int Compare(uint v1, uint v2) => v1.CompareTo(v2);
+} 
+
+/// <summary>
+/// Calculator for long integer arithmetic
+/// </summary>
+public class LongCalculator : ICalculator<long> {
+    public static readonly ICalculator<long> Instance = new LongCalculator();
+
+    public long Add(long v1, long v2) => checked(v1 + v2);
+    public long Subtract (long v1, long v2) => checked(v1 - v2);
+    public long Multiply (long v1, long v2) => checked(v1 * v2);
+    public long Divide (long v1, long v2) => checked(v1 / v2);
+    public long Negate (long v1) => -v1;
+    public long Unit() => 1;
+
+    public int Compare(long v1, long v2) => v1.CompareTo(v2);
+} 
+
+/// <summary>
+/// Calculator for float arithmetic
+/// </summary>
+
+public class FloatCalculator : ICalculator<float> {
+    public static readonly ICalculator<float> Instance = new FloatCalculator();
+
+    public float Add(float v1, float v2) => checked(v1 + v2);
+    public float Subtract (float v1, float v2) => checked(v1 - v2);
+    public float Multiply (float v1, float v2) => checked(v1 * v2);
+    public float Divide (float v1, float v2) => checked(v1 / v2);
+    public float Negate (float v1) => -v1;
+    public float Unit() => 1;
+
+    public int Compare(float v1, float v2) => v1.CompareTo(v2);
+}
+
 
 /// <summary>
 /// Calculator for double arithmetic

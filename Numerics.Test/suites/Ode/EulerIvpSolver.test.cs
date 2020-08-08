@@ -17,7 +17,7 @@ public class EulerIvpSolverTest {
         DoubleFunction2 yP = new DoubleFunction2((t,y) => (y - t * t + 1));
 
         var solver = new EulerIvpSolver();
-        var approxy = solver.Solve(yP, t, y0);
+        var approxy = solver.SolveInitial(new FirstOrderDE<double>(yP), t, y0);
 
         SaveCsv("EulerIVP", approxy, y, t);
     }
