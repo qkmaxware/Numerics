@@ -10,6 +10,7 @@ namespace Testing.Numerics {
 public class BvpSolverTest {
     [TestMethod]
     public void Solve() {
+        // Example taken from https://tutorial.math.lamar.edu/classes/de/BoundaryValueProblem.aspx
         // y'' + 4y = 0, 0 <= t <= pi/4, y(0) = -2, y(pi/4) = 10
         DoubleRange t = new DoubleRange(0, Math.PI/4, increment: 0.1);
         double y0 = -2;
@@ -19,11 +20,11 @@ public class BvpSolverTest {
         // y`` = 0*y` -4*y + 0
         var de = new SecondOrderDE<double>(new DoubleFunction((x) => 0), new DoubleFunction((x) => -4), new DoubleFunction((x) => 0));
 
-        var solver = new NewtonNonlinearShootingBvpSolver();
+        var solver = new LinearShootingBvpSolver();
         var (approxy, _) = solver.SolveBoundary(de, t, y0, ypi_4); //discard approximation to y`
         var exact = new DoubleFunction((t) => -2*Math.Cos(2 * t) + 10 * Math.Sin(2 * t));
 
-        SaveCsv("NewtonLinearShootingBVP", approxy, exact, t);
+        SaveCsv("LinearShootingBVP", approxy, exact, t);
     }
 
     protected static void SaveCsv(string name, IFunction<double> approx, IFunction<double> real, Range<double> range) {

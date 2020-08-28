@@ -52,6 +52,6 @@ double ypi_4 = 10;
 // y`` = 0*y` -4*y + 0
 var de = new SecondOrderDE<double>(new DoubleFunction((x) => 0), new DoubleFunction((x) => -4), new DoubleFunction((x) => 0));
 
-var solver = new NewtonNonlinearShootingBvpSolver();
+var solver = new LinearShootingBvpSolver();
 var (y, dy) = solver.SolveBoundary(de, t, y0, ypi_4);
 ```

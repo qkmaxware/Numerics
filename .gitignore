@@ -10,4 +10,5 @@ docs/doxygen/*.md
 !docs/doxygen/.pages
 
 # Ignore future stuff
-Numerics/src/Cas/
+/Cas/
+/Cas.Test/
