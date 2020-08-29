@@ -1,0 +1,22 @@
+- name: Installation
+  href: installing.md
+- name: Arithmetic
+  items: 
+    - name: Calculators
+      href: arithmetic/calculators.md
+    - name: Functions
+      href: arithmetic/function.md
+- name: Calculus
+  items: 
+    - name: Differentiation
+      href: calculus/derivatives.md
+    - name: Integration
+      href: calculus/integration.md
+    - name: Differentials Equations
+      href: calculus/differentials.md
+- name: Linear Algebra
+  items: 
+    - name: Matrices
+      href: linear algebra/matrices.md
+    - name: Vectors
+      href: linear algebra/vectors.md

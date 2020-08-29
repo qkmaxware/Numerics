@@ -114,13 +114,4 @@ public abstract class BaseInterpolatedFunction<T> : IInterpolatedFunction<T> whe
     }
 }
 
-/// <summary>
-/// Interpolated function using doubles
-/// </summary>
-public class DoubleInterpolatedFunction : BaseInterpolatedFunction<double> {
-    public DoubleInterpolatedFunction (IEnumerable<Point2<double>> samples) : base(DoubleCalculator.Instance, samples) {}
-
-    public DoubleInterpolatedFunction(double[] xs, double[] ys) : base(DoubleCalculator.Instance, xs, ys) {}
-}
-
 }

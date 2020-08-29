@@ -9,6 +9,4 @@ docs/doxygen/*.md
 !docs/doxygen/.gitkeep
 !docs/doxygen/.pages
 
-# Ignore future stuff
-/Cas/
-/Cas.Test/
+_site/
