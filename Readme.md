@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="120" height="120" src="docs/image/logo.svg">
+  <img width="120" height="120" src="docs/images/logo.svg">
 </p>
 
 # C# Numerics
