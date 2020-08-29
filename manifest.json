@@ -4,12 +4,876 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.BaseAdaptiveQuadratureIntegrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.BaseAdaptiveQuadratureIntegrator.html",
+          "hash": "E9fgXRnuPpxWOCuYyMmSHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.BaseInterpolatedFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.BaseInterpolatedFunction-1.html",
+          "hash": "Rmu9J6vIV9eXxI+UO/Djow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.CentredFivePointDifferentiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.CentredFivePointDifferentiator.html",
+          "hash": "nhJ6tcBbwvaQaceMdlWFrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.CentredThreePointDifferentiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.CentredThreePointDifferentiator.html",
+          "hash": "LECY0970En8NUydOerjoow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ComplexCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ComplexCalculator.html",
+          "hash": "0Ra2sJ9Y1C/S8xOZcWIjvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ComplexExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ComplexExtensions.html",
+          "hash": "nCChWABUFZ5QUo7R0FAuCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ComplexFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ComplexFunction.html",
+          "hash": "twfyyZJZ9wg7MY0s8DRKvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ComplexMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ComplexMatrix.html",
+          "hash": "4eEUiabG3wAWabphLgY6ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ConstantDefaultFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ConstantDefaultFunction-1.html",
+          "hash": "nV0JaoPrNNpOShggc1bFYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.CosineInterpolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.CosineInterpolation.html",
+          "hash": "Rrydtn9F/3Dtvb7mnl+sTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.CubicInterpolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.CubicInterpolation.html",
+          "hash": "1UIbu6ewSK2AQxk/Pr4gdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DimensionMismatchException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DimensionMismatchException.html",
+          "hash": "dnS9EPHqtuA4pUq3zPKyxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleCalculator.html",
+          "hash": "boQAwlfiEuJBOo6YQoFSqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleFunction.html",
+          "hash": "ADPfnTz3GCC7MMLfEzUkXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleFunction2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleFunction2.html",
+          "hash": "L++u6NpZ9B7x5N9glKgTHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleFunction3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleFunction3.html",
+          "hash": "ll28W+ce7haA7iVu5N9Epg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleInterpolatedFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleInterpolatedFunction.html",
+          "hash": "1HmxPRS8qPvrejHUpP6Bmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleMatrix.html",
+          "hash": "wdwKF0a0J4LXURNIzkgFpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.DoubleRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.DoubleRange.html",
+          "hash": "oGEDJdP8aTQnphe97Qb7pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.EndpointFivePointDifferentiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.EndpointFivePointDifferentiator.html",
+          "hash": "lcqhv/R+IoXZ5mUBIGIA0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.EndpointThreePointDifferentiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.EndpointThreePointDifferentiator.html",
+          "hash": "IbmH7ryqewOTKykjS2+sMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.EulerIvpSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.EulerIvpSolver.html",
+          "hash": "bNd1DMfVoeXguUP5w5lR2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.FirstOrderDE-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.FirstOrderDE-1.html",
+          "hash": "G4sHfTE2rYlC10B3beKg/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.FloatCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.FloatCalculator.html",
+          "hash": "4vF4VxA5tVvKfvNnxuCAWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IBvpSolver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IBvpSolver-1.html",
+          "hash": "bVoCP5UI9bhD1ue4bs8elQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ICalculationHelper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ICalculationHelper-1.html",
+          "hash": "teofIvs2SayH02ZdGECPUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.ICalculator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.ICalculator-1.html",
+          "hash": "xTN5/PxEeDf2XaYjMYbSyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IDefiniteIntegrator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IDefiniteIntegrator-1.html",
+          "hash": "iemcRCoYzolsjYoZAeTC4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction-1.html",
+          "hash": "K1I3QQjhpLTGktEvVKDiVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction-2.html",
+          "hash": "ahHus7ayBOUFPfmKBMp12w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction2-1.html",
+          "hash": "x752se4kxzdK7pEWZPns3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction3-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction3-1.html",
+          "hash": "5U9saFeib0R1RoB27sQqdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction4-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction4-1.html",
+          "hash": "VjXc3ohRWPcJbT8FaatIHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction5-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction5-1.html",
+          "hash": "uZN2vMtFaO5nXnK11+zqgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction6-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction6-1.html",
+          "hash": "KY374qQ8kmsIt9AC9FVWBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IFunction7-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IFunction7-1.html",
+          "hash": "XFOwb2KUqbkOGJ8aRlQtXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IIndefiniteIntegrator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IIndefiniteIntegrator-1.html",
+          "hash": "0dcdJo4jld1t49OOx70+lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IInterpolatedFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IInterpolatedFunction-1.html",
+          "hash": "ywtoWr2MoG63NcyWpGr53A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IInterpolator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IInterpolator-1.html",
+          "hash": "AI0WRXVDTE6wv3FRrqK8sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IIvpSolver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IIvpSolver-1.html",
+          "hash": "FZbzqqqb80WpITObWidzrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.INumericDifferentiator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.INumericDifferentiator-1.html",
+          "hash": "m5NCzy4EOWbHo+dTMauT6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IValueGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IValueGenerator-1.html",
+          "hash": "VO19O++z7STLdJEUanp7og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IntCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IntCalculator.html",
+          "hash": "SmDMBcUOIwTyFD2P+Bh4EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IntFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IntFunction.html",
+          "hash": "sr0tbucaaK3i7JEWIjLSrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IntMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IntMatrix.html",
+          "hash": "3wSdmTj/J5EEuWZA4QAgkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.IntRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.IntRange.html",
+          "hash": "yrnawCVApx2XSKwTenmecQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.LUPSet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.LUPSet-1.html",
+          "hash": "8rwqR1NsitvDexhIzm1kUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.LinearInterpolation-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.LinearInterpolation-1.html",
+          "hash": "z2FrpLEoMupEy6L1JepYNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.LinearShootingBvpSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.LinearShootingBvpSolver.html",
+          "hash": "8MCTRmz1FR9rGLTN5SOmKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.LongCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.LongCalculator.html",
+          "hash": "BGOcw1IiklZa1BP4E29xzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.Matrix-1.MatrixItemPrintOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.Matrix-1.MatrixItemPrintOrder.html",
+          "hash": "f4bpEnhijUETOrmu5qbFRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.Matrix-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.Matrix-1.html",
+          "hash": "+5BjkJZB5ZLFTUyns4AaGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction-1.html",
+          "hash": "/zKpI15HnubV43RQqqxuiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction-2.html",
+          "hash": "ZzgCR+9+OyM/zCSLBIGxog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction2-1.html",
+          "hash": "3cSjXHOWfe8wB9o0cFM1og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction3-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction3-1.html",
+          "hash": "FgCwuc62F2kHbueDwisI+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction4-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction4-1.html",
+          "hash": "Jqc2U3agJtYab5flu3yMIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction5-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction5-1.html",
+          "hash": "bFVcMKQMhAFvsd628lEouA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction6-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction6-1.html",
+          "hash": "wiv4Dywg9VIlh1G5m/ee/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.NativeFunction7-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.NativeFunction7-1.html",
+          "hash": "9YxsZERJ9RKZ5Z3hR8Dk1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.Point2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.Point2-1.html",
+          "hash": "FH50jG6lzu89m0ik6F3nzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.Range-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.Range-1.html",
+          "hash": "SugroghGDklIhfbpVghbkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.RungeKuttaIvpSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.RungeKuttaIvpSolver.html",
+          "hash": "2N45Pvd0g6ALOGPqDpIcnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.SecondOrderDE-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.SecondOrderDE-1.html",
+          "hash": "DuQ5a4jYZ3RIdviTYmo4BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.SimpsonAdaptiveQuadratureIntegrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.SimpsonAdaptiveQuadratureIntegrator.html",
+          "hash": "toCC1ydGW8tQ25YO4YEHiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.SimpsonIntegrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.SimpsonIntegrator.html",
+          "hash": "3ZUlS+EWhvAIDbIVmLo6vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.SmoothstepInterpolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.SmoothstepInterpolation.html",
+          "hash": "D/d1JCsIkfuI9cPa4v6MWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.StepInterpolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.StepInterpolation.html",
+          "hash": "BwA1fzgSOhVv/EmqhsZKIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.TrapezoidalIntegrator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.TrapezoidalIntegrator.html",
+          "hash": "7mNe3Ke3XROsj4IP3hUo1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.UintCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.UintCalculator.html",
+          "hash": "Bnlr1+Xdy2IQyG/dZhKmoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Qkmaxware.Numerics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Qkmaxware.Numerics.html",
+          "hash": "h2kwbuITUfqqFN2GSG+NXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "mugGNk+9qWPm/h8uDaRpmA=="
+          "hash": "p5MnKNkrQ3uUX46ahXNFTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "JU8gouJkMf8Hor57oLWp6Q=="
         }
       },
       "is_incremental": false,
@@ -175,7 +1039,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "AoRrCkR98AVtkDvZzOXN3Q=="
+          "hash": "lMB1UyYgaA3uWc0mrgoFlw=="
         }
       },
       "is_incremental": false,
@@ -197,6 +1061,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 11,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 71,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

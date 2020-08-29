@@ -1,0 +1,2142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Matrix&lt;T&gt;
+   | Qkmaxware.Numerics </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Matrix&lt;T&gt;
+   | Qkmaxware.Numerics ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Qkmaxware.Numerics.Matrix`1">
+  
+  
+  <h1 id="Qkmaxware_Numerics_Matrix_1" data-uid="Qkmaxware.Numerics.Matrix`1" class="text-break">Class Matrix&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Generic matrix class of type T</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Matrix&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Qkmaxware.Numerics.ComplexMatrix.html">ComplexMatrix</a></div>
+      <div class="level2"><a class="xref" href="Qkmaxware.Numerics.DoubleMatrix.html">DoubleMatrix</a></div>
+      <div class="level2"><a class="xref" href="Qkmaxware.Numerics.IntMatrix.html">IntMatrix</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Qkmaxware.Numerics.ICalculationHelper-1.html">ICalculationHelper</a>&lt;T&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Qkmaxware.Numerics.html">Qkmaxware.Numerics</a></h6>
+  <h6><strong>Assembly</strong>: Numerics.dll</h6>
+  <h5 id="Qkmaxware_Numerics_Matrix_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Matrix&lt;T&gt; : ICalculationHelper&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>element type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1__ctor_Qkmaxware_Numerics_ICalculator__0___0_0__0___.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.%23ctor(Qkmaxware.Numerics.ICalculator%7B%600%7D%2C%600%5B0%3A%2C0%3A%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L103">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1__ctor_" data-uid="Qkmaxware.Numerics.Matrix`1.#ctor*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1__ctor_Qkmaxware_Numerics_ICalculator__0___0_0__0___" data-uid="Qkmaxware.Numerics.Matrix`1.#ctor(Qkmaxware.Numerics.ICalculator{`0},`0[0:,0:])">Matrix(ICalculator&lt;T&gt;, T[,])</h4>
+  <div class="markdown level1 summary"><p>Create a new matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(ICalculator&lt;T&gt; calculator, T[, ] elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td><span class="parametername">calculator</span></td>
+        <td><p>arithmetic calculator for the given type</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[,]</td>
+        <td><span class="parametername">elements</span></td>
+        <td><p>matrix elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1__ctor_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.%23ctor(Qkmaxware.Numerics.ICalculator%7B%600%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L94">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1__ctor_" data-uid="Qkmaxware.Numerics.Matrix`1.#ctor*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1__ctor_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.#ctor(Qkmaxware.Numerics.ICalculator{`0},System.Int32,System.Int32)">Matrix(ICalculator&lt;T&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a new matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(ICalculator&lt;T&gt; calculator, int rows, int columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td><span class="parametername">calculator</span></td>
+        <td><p>arithmetic calculator for the given type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td><p>number of rows</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td><p>number of columns</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Calculator.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Calculator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L13">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Calculator_" data-uid="Qkmaxware.Numerics.Matrix`1.Calculator*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Calculator" data-uid="Qkmaxware.Numerics.Matrix`1.Calculator">Calculator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICalculator&lt;T&gt; Calculator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Columns.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L25">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Columns_" data-uid="Qkmaxware.Numerics.Matrix`1.Columns*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Columns" data-uid="Qkmaxware.Numerics.Matrix`1.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Number of columns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Elements.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Elements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L17">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Elements_" data-uid="Qkmaxware.Numerics.Matrix`1.Elements*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Elements" data-uid="Qkmaxware.Numerics.Matrix`1.Elements">Elements</h4>
+  <div class="markdown level1 summary"><p>Number of elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Elements { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_IsColumnMatrix.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.IsColumnMatrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L87">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_IsColumnMatrix_" data-uid="Qkmaxware.Numerics.Matrix`1.IsColumnMatrix*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_IsColumnMatrix" data-uid="Qkmaxware.Numerics.Matrix`1.IsColumnMatrix">IsColumnMatrix</h4>
+  <div class="markdown level1 summary"><p>Test if the matrix is a column matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColumnMatrix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_IsRowMatrix.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.IsRowMatrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L83">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_IsRowMatrix_" data-uid="Qkmaxware.Numerics.Matrix`1.IsRowMatrix*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_IsRowMatrix" data-uid="Qkmaxware.Numerics.Matrix`1.IsRowMatrix">IsRowMatrix</h4>
+  <div class="markdown level1 summary"><p>Test if the matrix is a row matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRowMatrix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_IsSquare.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.IsSquare%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L79">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_IsSquare_" data-uid="Qkmaxware.Numerics.Matrix`1.IsSquare*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_IsSquare" data-uid="Qkmaxware.Numerics.Matrix`1.IsSquare">IsSquare</h4>
+  <div class="markdown level1 summary"><p>Test if the matrix is square</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSquare { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Item_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Item(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L29">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Item_" data-uid="Qkmaxware.Numerics.Matrix`1.Item*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Item_System_Int32_System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
+  <div class="markdown level1 summary"><p>Get the element at the given row and column</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int row, int column] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Item_System_Int32_System_Range_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Item(System.Int32%2CSystem.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L33">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Item_" data-uid="Qkmaxware.Numerics.Matrix`1.Item*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Item_System_Int32_System_Range_" data-uid="Qkmaxware.Numerics.Matrix`1.Item(System.Int32,System.Range)">Item[Int32, Range]</h4>
+  <div class="markdown level1 summary"><p>Extract a row matrix over the provided columns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; this[int row, Range columns] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Range</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Item_System_Range_System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Item(System.Range%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L37">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Item_" data-uid="Qkmaxware.Numerics.Matrix`1.Item*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Item_System_Range_System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.Item(System.Range,System.Int32)">Item[Range, Int32]</h4>
+  <div class="markdown level1 summary"><p>Extract a column matrix over the provided rows</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; this[Range rows, int column] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Range</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Item_System_Range_System_Range_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Item(System.Range%2CSystem.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L41">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Item_" data-uid="Qkmaxware.Numerics.Matrix`1.Item*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Item_System_Range_System_Range_" data-uid="Qkmaxware.Numerics.Matrix`1.Item(System.Range,System.Range)">Item[Range, Range]</h4>
+  <div class="markdown level1 summary"><p>Extract a submatrix with the provided rows and columns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; this[Range rows, Range columns] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Range</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Range</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Rows.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Rows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L21">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Rows_" data-uid="Qkmaxware.Numerics.Matrix`1.Rows*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Rows" data-uid="Qkmaxware.Numerics.Matrix`1.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Number of rows</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Rows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Adjugate.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Adjugate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L458">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Adjugate_" data-uid="Qkmaxware.Numerics.Matrix`1.Adjugate*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Adjugate" data-uid="Qkmaxware.Numerics.Matrix`1.Adjugate">Adjugate()</h4>
+  <div class="markdown level1 summary"><p>Compute the adjugate matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Adjugate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>adjugate matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertCanMultiply_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertCanMultiply(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L153">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertCanMultiply_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertCanMultiply*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertCanMultiply_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.AssertCanMultiply(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0})">AssertCanMultiply(Matrix&lt;T&gt;, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertCanMultiply(Matrix&lt;T&gt; m1, Matrix&lt;T&gt; m2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertSameDimensions_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertSameDimensions(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L147">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertSameDimensions_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertSameDimensions*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertSameDimensions_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.AssertSameDimensions(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0})">AssertSameDimensions(Matrix&lt;T&gt;, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertSameDimensions(Matrix&lt;T&gt; m1, Matrix&lt;T&gt; m2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertSquare_Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertSquare(Qkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L141">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertSquare_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertSquare*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertSquare_Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.AssertSquare(Qkmaxware.Numerics.Matrix{`0})">AssertSquare(Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertSquare(Matrix&lt;T&gt; mtx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">mtx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertValidColumn__0_0__0___System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertValidColumn(%600%5B0%3A%2C0%3A%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L171">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertValidColumn_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidColumn*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertValidColumn__0_0__0___System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidColumn(`0[0:,0:],System.Int32)">AssertValidColumn(T[,], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void AssertValidColumn(T[, ] m1, int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[,]</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertValidColumn_Qkmaxware_Numerics_Matrix__0__System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertValidColumn(Qkmaxware.Numerics.Matrix%7B%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L159">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertValidColumn_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidColumn*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertValidColumn_Qkmaxware_Numerics_Matrix__0__System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidColumn(Qkmaxware.Numerics.Matrix{`0},System.Int32)">AssertValidColumn(Matrix&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertValidColumn(Matrix&lt;T&gt; m1, int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertValidRow__0_0__0___System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertValidRow(%600%5B0%3A%2C0%3A%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L177">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertValidRow_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidRow*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertValidRow__0_0__0___System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidRow(`0[0:,0:],System.Int32)">AssertValidRow(T[,], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void AssertValidRow(T[, ] m1, int row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[,]</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_AssertValidRow_Qkmaxware_Numerics_Matrix__0__System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.AssertValidRow(Qkmaxware.Numerics.Matrix%7B%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L165">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_AssertValidRow_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidRow*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_AssertValidRow_Qkmaxware_Numerics_Matrix__0__System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.AssertValidRow(Qkmaxware.Numerics.Matrix{`0},System.Int32)">AssertValidRow(Matrix&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertValidRow(Matrix&lt;T&gt; m1, int row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Cofactor.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Cofactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L422">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Cofactor_" data-uid="Qkmaxware.Numerics.Matrix`1.Cofactor*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Cofactor" data-uid="Qkmaxware.Numerics.Matrix`1.Cofactor">Cofactor()</h4>
+  <div class="markdown level1 summary"><p>Compute the cofactor matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Cofactor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>matrix of cofactors</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Decompose.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Decompose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L295">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Decompose_" data-uid="Qkmaxware.Numerics.Matrix`1.Decompose*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Decompose" data-uid="Qkmaxware.Numerics.Matrix`1.Decompose">Decompose()</h4>
+  <div class="markdown level1 summary"><p>Perform LU Decomposition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LUPSet&lt;T&gt; Decompose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.LUPSet-1.html">LUPSet</a>&lt;T&gt;</td>
+        <td><p>LU decomposition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Determinant.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Determinant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L345">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Determinant_" data-uid="Qkmaxware.Numerics.Matrix`1.Determinant*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Determinant" data-uid="Qkmaxware.Numerics.Matrix`1.Determinant">Determinant()</h4>
+  <div class="markdown level1 summary"><p>Compute the determinate of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Determinant()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>determinate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Fill_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32__0_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Fill(Qkmaxware.Numerics.ICalculator%7B%600%7D%2CSystem.Int32%2CSystem.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L110">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Fill_" data-uid="Qkmaxware.Numerics.Matrix`1.Fill*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Fill_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32__0_" data-uid="Qkmaxware.Numerics.Matrix`1.Fill(Qkmaxware.Numerics.ICalculator{`0},System.Int32,System.Int32,`0)">Fill(ICalculator&lt;T&gt;, Int32, Int32, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; Fill(ICalculator&lt;T&gt; calc, int rows, int columns, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td><span class="parametername">calc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Identity_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Identity(Qkmaxware.Numerics.ICalculator%7B%600%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L119">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Identity_" data-uid="Qkmaxware.Numerics.Matrix`1.Identity*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Identity_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_" data-uid="Qkmaxware.Numerics.Matrix`1.Identity(Qkmaxware.Numerics.ICalculator{`0},System.Int32,System.Int32)">Identity(ICalculator&lt;T&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; Identity(ICalculator&lt;T&gt; calc, int rows, int columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td><span class="parametername">calc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Inverse.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Inverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L466">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Inverse_" data-uid="Qkmaxware.Numerics.Matrix`1.Inverse*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Inverse" data-uid="Qkmaxware.Numerics.Matrix`1.Inverse">Inverse()</h4>
+  <div class="markdown level1 summary"><p>Compute the inverse of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Inverse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>matrix inverse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Map_System_Func__0__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Map(System.Func%7B%600%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L190">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Map_" data-uid="Qkmaxware.Numerics.Matrix`1.Map*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Map_System_Func__0__0__" data-uid="Qkmaxware.Numerics.Matrix`1.Map(System.Func{`0,`0})">Map(Func&lt;T, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Perform element wise operation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Map(Func&lt;T, T&gt; op)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, T&gt;</td>
+        <td><span class="parametername">op</span></td>
+        <td><p>operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>new matrix with altered elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Map__1_Qkmaxware_Numerics_ICalculator___0__System_Func__0___0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Map%60%601(Qkmaxware.Numerics.ICalculator%7B%60%600%7D%2CSystem.Func%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L206">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Map_" data-uid="Qkmaxware.Numerics.Matrix`1.Map*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Map__1_Qkmaxware_Numerics_ICalculator___0__System_Func__0___0__" data-uid="Qkmaxware.Numerics.Matrix`1.Map``1(Qkmaxware.Numerics.ICalculator{``0},System.Func{`0,``0})">Map&lt;K&gt;(ICalculator&lt;K&gt;, Func&lt;T, K&gt;)</h4>
+  <div class="markdown level1 summary"><p>Convert from one element type to another</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;K&gt; Map&lt;K&gt;(ICalculator&lt;K&gt; calculator, Func&lt;T, K&gt; convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;K&gt;</td>
+        <td><span class="parametername">calculator</span></td>
+        <td><p>calculator for new element arithmetic</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, K&gt;</td>
+        <td><span class="parametername">convert</span></td>
+        <td><p>conversion function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;K&gt;</td>
+        <td><p>new matrix with the new type and the altered elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">K</span></td>
+        <td><p>new type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Minors.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Minors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L405">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Minors_" data-uid="Qkmaxware.Numerics.Matrix`1.Minors*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Minors" data-uid="Qkmaxware.Numerics.Matrix`1.Minors">Minors()</h4>
+  <div class="markdown level1 summary"><p>Compute the matrix of minors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Minors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>matrix of minors</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Operate_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__System_Func__0__0__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Operate(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D%2CSystem.Func%7B%600%2C%600%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L477">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Operate_" data-uid="Qkmaxware.Numerics.Matrix`1.Operate*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Operate_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__System_Func__0__0__0__" data-uid="Qkmaxware.Numerics.Matrix`1.Operate(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0},System.Func{`0,`0,`0})">Operate(Matrix&lt;T&gt;, Matrix&lt;T&gt;, Func&lt;T, T, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Perform element wise operations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; Operate(Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs, Func&lt;T, T, T&gt; function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, T, T&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td><p>element wise operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>transformed matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Random_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_Qkmaxware_Numerics_IValueGenerator__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Random(Qkmaxware.Numerics.ICalculator%7B%600%7D%2CSystem.Int32%2CSystem.Int32%2CQkmaxware.Numerics.IValueGenerator%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L127">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Random_" data-uid="Qkmaxware.Numerics.Matrix`1.Random*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Random_Qkmaxware_Numerics_ICalculator__0__System_Int32_System_Int32_Qkmaxware_Numerics_IValueGenerator__0__" data-uid="Qkmaxware.Numerics.Matrix`1.Random(Qkmaxware.Numerics.ICalculator{`0},System.Int32,System.Int32,Qkmaxware.Numerics.IValueGenerator{`0})">Random(ICalculator&lt;T&gt;, Int32, Int32, IValueGenerator&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; Random(ICalculator&lt;T&gt; calc, int rows, int columns, IValueGenerator&lt;T&gt; rng)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.ICalculator-1.html">ICalculator</a>&lt;T&gt;</td>
+        <td><span class="parametername">calc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.IValueGenerator-1.html">IValueGenerator</a>&lt;T&gt;</td>
+        <td><span class="parametername">rng</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_ToLatexString_System_String_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.ToLatexString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L654">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_ToLatexString_" data-uid="Qkmaxware.Numerics.Matrix`1.ToLatexString*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_ToLatexString_System_String_" data-uid="Qkmaxware.Numerics.Matrix`1.ToLatexString(System.String)">ToLatexString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToLatexString(string format = &quot;{0}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_ToMapleString_System_String_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.ToMapleString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L645">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_ToMapleString_" data-uid="Qkmaxware.Numerics.Matrix`1.ToMapleString*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_ToMapleString_System_String_" data-uid="Qkmaxware.Numerics.Matrix`1.ToMapleString(System.String)">ToMapleString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToMapleString(string format = &quot;{0}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_ToMatlabString_System_String_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.ToMatlabString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L636">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_ToMatlabString_" data-uid="Qkmaxware.Numerics.Matrix`1.ToMatlabString*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_ToMatlabString_System_String_" data-uid="Qkmaxware.Numerics.Matrix`1.ToMatlabString(System.String)">ToMatlabString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToMatlabString(string format = &quot;{0}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_ToString.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L666">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_ToString_" data-uid="Qkmaxware.Numerics.Matrix`1.ToString*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_ToString" data-uid="Qkmaxware.Numerics.Matrix`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_ToWolframString_System_String_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.ToWolframString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L627">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_ToWolframString_" data-uid="Qkmaxware.Numerics.Matrix`1.ToWolframString*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_ToWolframString_System_String_" data-uid="Qkmaxware.Numerics.Matrix`1.ToWolframString(System.String)">ToWolframString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToWolframString(string format = &quot;{0}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Trace.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Trace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L219">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Trace_" data-uid="Qkmaxware.Numerics.Matrix`1.Trace*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Trace" data-uid="Qkmaxware.Numerics.Matrix`1.Trace">Trace()</h4>
+  <div class="markdown level1 summary"><p>Compute the trace of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Trace()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>trace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_Transpose.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.Transpose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L238">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_Transpose_" data-uid="Qkmaxware.Numerics.Matrix`1.Transpose*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_Transpose" data-uid="Qkmaxware.Numerics.Matrix`1.Transpose">Transpose()</h4>
+  <div class="markdown level1 summary"><p>Compute the tranposition of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix&lt;T&gt; Transpose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>transposition of this matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Addition_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Addition(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L499">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Addition_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Addition*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Addition_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.op_Addition(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0})">Addition(Matrix&lt;T&gt;, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Matrix addition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator +(Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>sum of the matrices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Division_Qkmaxware_Numerics_Matrix__0___0_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Division(Qkmaxware.Numerics.Matrix%7B%600%7D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L537">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Division_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Division*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Division_Qkmaxware_Numerics_Matrix__0___0_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Division(Qkmaxware.Numerics.Matrix{`0},`0)">Division(Matrix&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Scalar division</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator /(Matrix&lt;T&gt; lhs, T rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>element wise division</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Multiply__0_Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Multiply(%600%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L573">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Multiply_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Multiply__0_Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply(`0,Qkmaxware.Numerics.Matrix{`0})">Multiply(T, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Scalar multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator *(T lhs, Matrix&lt;T&gt; rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>element wise multiplication</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Multiply_Qkmaxware_Numerics_Matrix__0___0_.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Multiply(Qkmaxware.Numerics.Matrix%7B%600%7D%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L555">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Multiply_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Multiply_Qkmaxware_Numerics_Matrix__0___0_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply(Qkmaxware.Numerics.Matrix{`0},`0)">Multiply(Matrix&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Scalar multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator *(Matrix&lt;T&gt; lhs, T rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>element wise multiplication</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Multiply_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Multiply(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L591">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Multiply_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Multiply_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.op_Multiply(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0})">Multiply(Matrix&lt;T&gt;, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator *(Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>matrix multiplication</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1_op_Subtraction_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601.op_Subtraction(Qkmaxware.Numerics.Matrix%7B%600%7D%2CQkmaxware.Numerics.Matrix%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L518">View Source</a>
+  </span>
+  <a id="Qkmaxware_Numerics_Matrix_1_op_Subtraction_" data-uid="Qkmaxware.Numerics.Matrix`1.op_Subtraction*"></a>
+  <h4 id="Qkmaxware_Numerics_Matrix_1_op_Subtraction_Qkmaxware_Numerics_Matrix__0__Qkmaxware_Numerics_Matrix__0__" data-uid="Qkmaxware.Numerics.Matrix`1.op_Subtraction(Qkmaxware.Numerics.Matrix{`0},Qkmaxware.Numerics.Matrix{`0})">Subtraction(Matrix&lt;T&gt;, Matrix&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Matrix subtraction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix&lt;T&gt; operator -(Matrix&lt;T&gt; lhs, Matrix&lt;T&gt; rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>first</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>second</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Qkmaxware.Numerics.Matrix-1.html">Matrix</a>&lt;T&gt;</td>
+        <td><p>difference of the matrices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Qkmaxware.Numerics.ICalculationHelper-1.html">ICalculationHelper&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/qkmaxware/Numerics/new/master/apiSpec/new?filename=Qkmaxware_Numerics_Matrix_1.md&amp;value=---%0Auid%3A%20Qkmaxware.Numerics.Matrix%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/qkmaxware/Numerics/blob/master/Numerics/src/Linear Algebra/Matrix.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
