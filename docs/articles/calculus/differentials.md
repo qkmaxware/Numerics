@@ -43,7 +43,7 @@ $$
 \frac{d^2y}{dt^2} = p(t)\frac{dy}{dt} + q(t)y + r(t), a \leq t \leq b, y(a) = y0, y(b) = y1
 $$
 
-### Nonlinear Shooting
+### Linear Shooting
 ```cs
 DoubleRange t = new DoubleRange(0, Math.PI/4, increment: 0.1);
 double y0 = -2;

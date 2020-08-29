@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Qkmaxware.Numerics {
 
 /// <summary>
-/// Solve boundary value problems with Nonlinear Shooting and Newton's method
+/// Solve boundary value problems with linear shooting
 /// </summary>
 public class LinearShootingBvpSolver : IBvpSolver<double> {
     private int N = 50;
