@@ -21,10 +21,10 @@ jobs:
 
       - name: Build
         shell: powershell
-        run: docfx build docs/docfx.json -o site 
+        run: docfx build docs/docfx.json -o . 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./_site
