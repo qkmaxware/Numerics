@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@v2
       
       - name: Setup Nuget
         uses: warrenbuckley/Setup-Nuget@v1
