@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Installation | Qkmaxware.Numerics </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Installation | Qkmaxware.Numerics ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="installation">Installation</h1>
+
+<p>Qkmaxware.Numerics is distributed as a Nuget package via <a href="https://github.com/qkmaxware/Numerics/packages">Github's Package Repository</a>.</p>
+<h2 id="github-access-token">Github Access Token</h2>
+<p>Github requires that all users will need to authenticate with Github in order to download packages. At the time of writing, the process for creating such a token located on <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">docs.github.com</a>. When creating this token make sure that it permissions to <code>read:packages</code> enabled which is required to download github packages.</p>
+<h2 id="adding-package">Adding Package</h2>
+<ol>
+<li>Create an empty project or use an existing .Net project</li>
+</ol>
+<pre><code>dotnet new console
+</code></pre>
+<ol start="2">
+<li>Create a new file at the root of the project named <code>nuget.config</code> and paste the following xml into it. Replace <code>%USERNAME%</code> with your Github username and <code>%ACCESS_TOKEN%</code> with the access token that you created previously.</li>
+</ol>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;configuration&gt;
+    &lt;packageSources&gt;
+        &lt;add key=&quot;qkmaxware&quot; value=&quot;https://nuget.pkg.github.com/qkmaxware/index.json&quot; /&gt;
+    &lt;/packageSources&gt;
+    &lt;packageSourceCredentials&gt;
+        &lt;qkmaxware&gt;
+            &lt;add key=&quot;Username&quot; value=&quot;%USERNAME%&quot; /&gt;
+            &lt;add key=&quot;ClearTextPassword&quot; value=&quot;%ACCESS_TOKEN%&quot; /&gt;
+        &lt;/qkmaxware&gt;
+    &lt;/packageSourceCredentials&gt;
+&lt;/configuration&gt;
+</code></pre>
+<ol start="3">
+<li>Add the <code>Qkmaxware.Numerics</code> package, make sure to specify Github as the package source</li>
+</ol>
+<pre><code>dotnet add package Qkmaxware.Numerics --source &quot;https://nuget.pkg.github.com/qkmaxware/index.json&quot;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/qkmaxware/Numerics/blob/master/docs/articles/installing.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

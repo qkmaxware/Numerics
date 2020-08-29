@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Functions | Qkmaxware.Numerics </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Functions | Qkmaxware.Numerics ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="functions">Functions</h1>
+
+<h2 id="native-functions">Native Functions</h2>
+<p>Native functions are functions that can be represented exactly by the evaluation of a C# function. These functions are considered <strong>exact</strong> in that they are expected to work for all valid input parametres. Native functions are classes that implement the function interface abstraction <code>IFunction</code>. The example below shows a native C# function which works for all valid parametres of type <code>double</code>.</p>
+<pre><code class="lang-cs">DoubleFunction func = new DoubleFunction((x) =&gt; Math.Sin(x));
+</code></pre>
+<h2 id="interpolated-functions">Interpolated Functions</h2>
+<p>Often, functions cannot be represented exactly on a computer. This could be because the function is derived from experimental data points and the actual function is unknown, or because the actual function it too computationally heavy. For these cases, function interpolation is used. Interpolated functions all extend from the <code>BaseInterpolatedFunction</code> class. For interpolated functions, a series of sample points are needed. For any value on the interpolated curve, the value is the result of interpolating a value from among the provided sample points. Good choices of the sample points and the interpolation method are a necessity for the quality of the interpolated function.</p>
+<p>A comparison of some of the common interpolation methods can be seen in the figure below. By default, linear interpolation is used unless otherwise stated. However this can be changed by assigning new interpolation functions to the <code>InterpolationMethod</code> member of the <code>BaseInterpolatedFunction</code> class.</p>
+<p><canvas id="c1"></canvas></p>
+<p>Interpolated functions behave exactly like native functions and can be used anywhere that accepts an <code>IFunction</code> as an argument.</p>
+<p>Usually the <code>double</code> data-type is preferred for representing real values. The class <code>DoubleInterpolatedFunction</code> is a class that extends from <code>BaseInterpolatedFunction</code> but is specialized for the <code>double</code> data-type.</p>
+<pre><code class="lang-cs">var xs = new double[] { ... };
+var ys = new double[] { ... };
+
+var function = new DoubleInterpolatedFunction(xs, ys);
+</code></pre>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script>
+    (function(divId){
+    var last = -1;
+    var start = 0;
+    var end = 1;
+    var next = 2;
+    var midpoint = start + (end - start) * 0.5;
+    var xs = []; for (var x = 0; x <= 1; x+= 0.1) { xs.push(x); } 
+    var step = xs.map((x) => (x > midpoint ? end : start));
+    var linear = xs.map((x) => x * end + (1-x) * start);
+    var cosine = xs.map((x) => {
+        var t2 = (1 - Math.cos(x * Math.PI)) / 2;
+        return start * (1 - t2) + end * t2;
+    });
+    var smoothstep = xs.map((t) => {
+        var _01 = t * t * t * (t * (t * 6 - 15) + 10); 
+        return _01 * end + (1 - _01) * start;
+    });
+    var cubic = xs.map((t) => {
+        var t2 = t * t;
+        var a0 = next - end - last + start;
+        var a1 = last - start - a0;
+        var a2 = end - last;
+        var a3 = start;
+        return(a0 * t * t2 + a1 * t2 + a2 * t + a3);
+    });
+    var options = {
+        legend: {
+            position: 'right'
+        },
+        scales: {
+            xAxes: [{
+                ticks:{
+                    stepSize : 0.1,
+                },
+                display: false
+            }]
+        }
+    };
+    var data = {
+        labels: xs,
+        datasets: [
+            {
+                type: 'line',
+                label: 'step',
+                data: step,
+                fill: false,
+                borderColor: 'rgba(255, 255, 0, 1)',
+                lineTension: 0
+            },
+            {
+                type: 'line',
+                label: 'linear',
+                data: linear,
+                fill: false,
+                borderColor: 'rgba(41, 128, 185, 1)'
+            },
+            {
+                type: 'line',
+                label: 'cosine',
+                data: cosine,
+                fill: false,
+                borderColor: 'rgba(245, 66, 66, 1)'
+            },
+            {
+                type: 'line',
+                label: 'smoothstep',
+                data: smoothstep,
+                fill: false,
+                borderColor: 'rgba(21, 140, 6, 1)'
+            },
+            {
+                type: 'line',
+                label: 'cubic',
+                data: cubic,
+                fill: false,
+                borderColor: 'rgba(162, 0, 255, 1)'
+            }
+        ]
+    };
+    var div = document.getElementById(divId);
+    if (!div)
+        return;  
+    var ctx = div.getContext("2d");
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+})("c1");
+</script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/qkmaxware/Numerics/blob/master/docs/articles/arithmetic/function.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
